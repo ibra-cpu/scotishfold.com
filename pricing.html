@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Scottish Fold Cats</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Scottish Fold Pricing</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>Pricing for Scottish Fold Kittens</h2>
+            <p>Below are our pricing tiers. Select a package and fill out the reservation form to begin the process.</p>
+
+           
+
+                <div class="price-card featured">
+                    <h3>Registered Kitten</h3>
+                    <p class="price">$1,200</p>
+                    <ul>
+                        <li>Pedigree registration</li>
+                        <li>Vaccinations & microchip</li>
+                        <li>Starter kit & guidance</li>
+                    </ul>
+                    <button class="btn-reserve" onclick="showReservationForm('Registered Kitten - $1,200')">Reserve Now</button>
+                </div>
+
+               
+            </div>
+
+            <div id="reservation-form" class="reservation-form hidden">
+                <h3>Reserve Your Scottish Fold Kitten</h3>
+                <form id="kittenReservationForm" onsubmit="submitReservation(event)">
+                    <input type="hidden" id="selectedPackage" name="selectedPackage">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Additional Comments or Questions" rows="4"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Submit Reservation</button>
+                        <button type="button" class="btn-cancel" onclick="hideReservationForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="back-button">
+                <a href="index.html" class="btn-back">Back to Main Menu</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Scottish Fold Cats. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
